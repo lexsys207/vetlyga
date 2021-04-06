@@ -1,0 +1,275 @@
+.house__floor,
+.house__desc {
+  text-shadow: 1px 1px 2px black, 0 0 1em #000;
+}
+
+.house__title p {
+  font-size: 20px;
+}
+
+.cloud-bottom p {
+  font-size: 20px;
+}
+
+/*
+.footer .cloud-top {
+	top: 220px;
+}
+*/
+
+.map {
+  height: 840px;
+}
+
+.features {
+  align-items: baseline;
+}
+
+.mgv_50 {
+  text-align: center;
+}
+
+.mgv_50 .btn {
+  margin: 50px auto;
+}
+
+.btn-price {
+  text-align: center;
+}
+
+.btn-price .btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  margin: auto;
+  width: auto !important;
+}
+
+.modal__header .flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.modal__header .header_button {
+  display: flex;
+}
+
+.modal__header .header_button a {
+  margin-right: 20px;
+}
+
+.modal.active {
+  position: absolute !important;
+}
+
+.modal__close_private,
+.modal__close_price {
+  position: absolute;
+  right: 15px;
+  top: 13px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.modal__close_private::before,
+.modal__close_price::before {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+  -ms-transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.modal__close_private::after,
+.modal__close_private::before,
+.modal__close_price::after,
+.modal__close_price::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1px;
+  height: 100%;
+  background: #777;
+}
+
+.modal__close_private::after,
+.modal__close_price::after {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+  -ms-transform: translate(-50%, -50%) rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.about__content p {
+  text-align: justify;
+}
+
+.house__desc {
+  text-align: justify;
+}
+
+.services__desc {
+  text-align: justify;
+}
+
+.modal__slider ~ p {
+  text-align: justify;
+}
+
+/* Выпадающее меню */
+.menu__content button {
+  border: none;
+  background: transparent;
+  padding: 0;
+  color: inherit;
+  display: block;
+  white-space: nowrap;
+  margin-bottom: 10px;
+  font-size: 14px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu__content button:hover {
+  color: #ff8730;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.house__title h2,
+.house__item h2,
+.sale h2,
+.instagram h2,
+.about__content h2,
+.text .container h2,
+.pravila h2 {
+  font-size: 40px;
+  font-family: Philosopher, sans-serif;
+  margin-bottom: 17px;
+}
+
+.sale h2 {
+  text-align: center;
+  margin-bottom: 59px;
+}
+
+.instagram h2 {
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.about__content h2 {
+  margin-bottom: 20px;
+}
+
+.cloud.content div h2 {
+  color: #ff8730;
+  font-size: 40px;
+  font-family: Philosopher, sans-serif;
+  margin-bottom: 17px;
+}
+
+.text .container h2 {
+  text-align: center;
+  margin-bottom: 65px;
+  white-space: nowrap;
+}
+
+.text .container p + h2 {
+  margin-top: 100px;
+}
+
+.pravila h2 {
+}
+
+.btn:hover {
+  opacity: 0.8;
+  box-shadow: 0 0 20px rgb(255 135 48 / 50%);
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  opacity: 0.8;
+  box-shadow: 0 0 20px rgb(255 135 48 / 50%);
+}
+
+.services__icon:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  box-shadow: 0 0 20px rgb(255 135 48 / 50%);
+}
+
+@media (max-width: 1600px) {
+  .house.ilich .container {
+    padding-bottom: 33%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .house.ilich .container {
+    padding-bottom: 38%;
+  }
+}
+
+@media (max-width: 768px) {
+  .cloud.content {
+    height: 700px;
+  }
+  .services .container {
+    padding-top: 53%;
+  }
+
+  .modal[data-modal="aist"] h2 {
+    margin: 0;
+  }
+
+  .modal__header .flex {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: five;
+  }
+
+  .modal__header .header_button {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .house__floor .flex > div:first-child {
+    width: 140px;
+  }
+  .house__name {
+    text-shadow: 1px 1px black;
+  }
+  .house.ilich .container {
+    padding-bottom: 103%;
+  }
+
+  .about__content .border .orange {
+    text-shadow: 1px 1px #000;
+  }
+}
+
+@media (max-width: 375px) {
+}
+
+@media (max-width: 320px) {
+  .house__floor .flex > div:first-child {
+    width: 140px;
+  }
+  .house__name {
+    text-shadow: 1px 1px black;
+  }
+  .house.ilich .container {
+    padding-bottom: 103%;
+  }
+
+  .about__content .border .orange {
+    text-shadow: 1px 1px #000;
+  }
+}
