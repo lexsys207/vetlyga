@@ -99,7 +99,7 @@
 <!-- START CONTENT  -->
 
 <section class="main">
-    <img class="lazy" src="img/main.webp">
+    <img class="lazy" data-src="img/main.webp">
     <div class="container">
         <h1>Индивидуальный и комфортный <br> отдых на берегу реки Ветлуга</h1>
         <p>Забудьте о городской суете и насладитесь красотой природы в кругу семьи и друзей</p>
@@ -107,7 +107,7 @@
 </section>
 
 <section class="about">
-    <img class="lazy" src="img/about.webp">
+    <img class="lazy" data-src="img/about.webp">
     <div class="cloud cloud-top lazy"></div>
     <div class="container">
         <div class="top">
@@ -157,7 +157,7 @@
 </section>
 
 <section class="house aist">
-    <img class="lazy" src="img/aist.webp">
+    <img class="lazy" data-src="img/aist.webp">
     <div class="container">
         <div class="top">
             <div class="house__features">
@@ -279,7 +279,7 @@
 </section>
 
 <section class="house ilich ">
-    <img class="lazy" src="img/ilich.webp">
+    <img class="lazy" data-src="img/ilich.webp">
     <div class="container">
         <div class="top"></div>
         <div class="bottom" id="house_ilich">
@@ -360,7 +360,7 @@
 </section>
 
 <section class="services">
-    <img class="lazy" src="img/features.webp">
+    <img class="lazy" data-src="img/features.webp">
     <div class="container">
         <div class="services__row">
             <div class="services__item">
@@ -1310,5 +1310,10 @@
 <script src="js/main.js"></script>
 <script src="js/owl.carousel.js"></script>
 <script src="js/jquery.lazy.min.js"></script>
+<script>
+        $(function() {
+            $('.lazy').lazy();
+        });
+</script>
 </body>
 </html>
